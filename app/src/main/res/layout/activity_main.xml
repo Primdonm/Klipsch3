@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6DDD70"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -24,6 +25,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="vertical">
 
             <TextView
@@ -77,21 +79,34 @@
             <Spinner
                 android:id="@+id/spinSpeaker"
                 android:layout_width="395dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:entries="@array/speakerSelect" />
 
-            <Button
-                android:id="@+id/btnCalculate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/btnCal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnReset2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="reset"
-                android:text="@string/btnReset" />
+                <Button
+                    android:id="@+id/btnCalculate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnCal" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnReset2"
+                        android:layout_width="184dp"
+                        android:layout_height="wrap_content"
+                        android:onClick="reset"
+                        android:text="@string/btnReset" />
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
