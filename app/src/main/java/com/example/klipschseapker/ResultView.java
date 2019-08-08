@@ -1,4 +1,4 @@
-package com.example.klipschseapker;
+/*package com.example.klipschseapker;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -35,3 +35,4 @@ public class ResultView extends View {
         });
     }
 }
+*/

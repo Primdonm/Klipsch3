@@ -52,11 +52,12 @@ public class Result extends AppCompatActivity {
                 Canvas canvas = holder.lockCanvas();
                 // draw
                 Paint paint = new Paint();
-                paint.setStrokeWidth(1);
+                paint.setStrokeWidth(5);
                 //todo test with length and width variables.
-                canvas.drawRect(0, 0, width, length, paint);
-                //test failed trying width/length and trying hard coded numbers.
-               // canvas.drawRect(25  ,25 ,25 ,25 ,paint);
+                canvas.drawRect(0, 0, length * 10, width *10, paint);
+                //testing with length/width results in 2 squares.
+                //with the black square representing user input.
+
 
                 holder.unlockCanvasAndPost(canvas);
             }
